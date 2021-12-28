@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Recipe App</title>
+    <!-- this is api from https://www.themealdb.com/ -->
+  </head>
+
+  <body>
+    <div class="mobile-container">
+      <header>
+        <input type="text" id="search-term" />
+        <button id="search"><i class="fas fa-search"></i></button>
+      </header>
+      <div class="fav-container">
+        <h3>Favorite Meals</h3>
+        <ul class="fav-meals" id="fav-meals">
+          <!-- <li><img src="https://www.themealdb.com/images/ingredients/Lime.png" alt=""><span>Lime</span></li>
+                <li><img src="https://www.themealdb.com\/images\/media\/meals\/1548772327.jpg"
+                        alt=""><span>Salmon</span>
+                </li>
+                <li><img src="https://www.themealdb.com\/images\/media\/meals\/kvbotn1581012881.jpg" alt=""><span>Chiken
+                        </span></li>
+                <li><img src="https://www.themealdb.com/images/ingredients/Lime.png" alt=""><span>Lime</span></li> -->
+        </ul>
+      </div>
+      <!-- random meals section -->
+      <div class="meals" id="meals"></div>
+    </div>
+
+    <!-- show meal detail -->
+    <div class="meal-info-container hidden" id="meal-info-container">
+      <div class="meal-info" class="meal-info">
+        <button id="close-btn" class="close-btn">
+          <i class="fas fa-times"></i>
+        </button>
+        <div class="meal-detail" id="meal-detail"></div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
